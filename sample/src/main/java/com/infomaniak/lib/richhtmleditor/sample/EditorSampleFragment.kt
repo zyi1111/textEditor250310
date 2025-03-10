@@ -58,7 +58,7 @@ class EditorSampleFragment : Fragment() {
 
         setToolbarEnabledStatus(false)
 
-        setEditorContent()
+        //setEditorContent()
         editor.apply {
             // You can configure the editor like this:
             // addCss(readAsset("editor_custom_css.css"))
@@ -79,11 +79,14 @@ class EditorSampleFragment : Fragment() {
         observeEditorStatusUpdates()
     }
 
+    /*
     private fun setEditorContent() {
         lifecycleScope.launch {
             editorSampleViewModel.editorReloader.load(binding.editor, readAsset("example1.html"))
         }
     }
+
+     */
 
     private fun setEditorButtonClickListeners() = with(binding) {
         buttonBold.setOnClickListener { editor.toggleBold() }
@@ -122,9 +125,9 @@ class EditorSampleFragment : Fragment() {
 
         textColorRed.setOnClickListener { editor.setTextColor(RED) }
         textColorBlue.setOnClickListener { editor.setTextColor(BLUE) }
-        textBackgroundColorRed.setOnClickListener { editor.setTextBackgroundColor(RED) }
-        textBackgroundColorBlue.setOnClickListener { editor.setTextBackgroundColor(BLUE) }
-
+        textColorBlack.setOnClickListener { editor.setTextColor(BLACK) }
+        textBackgroundColorNone.setOnClickListener { editor.setTextBackgroundColor(NONE) }
+        textBackgroundColorYellow.setOnClickListener { editor.setTextBackgroundColor(YELLOW) }
         fontSmallButton.setOnClickListener { editor.setFontSize(SMALL_FONT_SIZE) }
         fontMediumButton.setOnClickListener { editor.setFontSize(MEDIUM_FONT_SIZE) }
         fontBigButton.setOnClickListener { editor.setFontSize(BIG_FONT_SIZE) }
@@ -204,8 +207,13 @@ class EditorSampleFragment : Fragment() {
     }
 
     companion object {
+        //
+        private val BLACK = Color.parseColor("#000000")
         private val RED = Color.parseColor("#FF0000")
         private val BLUE = Color.parseColor("#0000FF")
+
+        private val NONE = Color.parseColor("#FFFFFF")
+        private val YELLOW = Color.parseColor("#FFF200")
 
         private const val SMALL_FONT_SIZE = 2
         private const val MEDIUM_FONT_SIZE = 4

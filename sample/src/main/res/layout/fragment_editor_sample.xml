@@ -229,6 +229,15 @@
                     android:textColor="@color/subtitleColor" />
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/textColorBlack"
+                    style="@style/EditorButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Black" />
+
+
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/textColorRed"
                     style="@style/EditorButton"
                     android:layout_width="wrap_content"
@@ -252,20 +261,20 @@
                     android:textColor="@color/subtitleColor" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/textBackgroundColorRed"
+                    android:id="@+id/textBackgroundColorNone"
                     style="@style/EditorButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
-                    android:text="Red" />
+                    android:text="None" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/textBackgroundColorBlue"
+                    android:id="@+id/textBackgroundColorYellow"
                     style="@style/EditorButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
-                    android:text="Blue" />
+                    android:text="Yellow" />
 
             </LinearLayout>
         </HorizontalScrollView>
