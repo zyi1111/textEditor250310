@@ -154,12 +154,3 @@ Useful methods and classes inside the project are documented with KDoc.
 ## 🔍 Sample Projects
 
 You can find a sample project in the [sample](sample) folder.
-
-## 📱 Apps using the rich html editor
-
-<a href="https://github.com/Infomaniak/android-kMail">
-    <img src="assets/infomaniak-mail.webp" style="max-height: 300px; width: auto;" alt="Find App">
-</a>
-
-[Infomaniak Mail](https://github.com/Infomaniak/android-kMail) allows you to manage your Infomaniak addresses in a completely
-secure environment.
